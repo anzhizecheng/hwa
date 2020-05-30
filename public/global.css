@@ -1,0 +1,6 @@
+@import url("css/googleapis-fonts/fonts.css");
+@import url("css/bulma.css");
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,31 @@
+2019年4月更新
+---------------------------------------
+fonts.googleapis.com 加载慢，现在360公司也不再提供服务(fonts.useso.com)，所以就从google上扒下来，把css和字体文件都放到本地。
+
+替换/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);*/
+
+@import url(googleapis-fonts/fonts.css);
+
+---------------------------------------
+使用命令下载原始css文件
+wget https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic -O orig.css
+
+然后根据得到的orig.css文件内容，使用下面的命令下载字体文件。
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18E.ttf
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18E.ttf
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf
+wget https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf
+
+最后修改orig.css里的字体链接。
+仅供参考。
+
+---------------------------------------
+
+这里的例子是
+https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic -O orig.css
+如果是其它类型，可以参考上面的方法自己整理。
+
+---------------------------------------
